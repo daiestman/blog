@@ -3,18 +3,20 @@
 <html class="article-header-style-default">
 <head>
 	
-	<title>归档 : 2025/2 - Hexo</title>
+	<title>零成本建站之hexo前言 - Hexo</title>
 	<meta charset="utf-8">
 	
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	
-	<meta name="description" content="NO">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/2025/02/index.html">
+	<meta name="description" content="相信有的朋友看了我之前的文章中使用infinityfree+wordpress建立动态博客的文章对于有稳定国内服务器的同学来说这可能就是最优解，写文章，发博客都非常的方便但是对于零成本建站这个项目来说，动态博客似乎太奢侈了是因为动态博客它的资源消耗大，维护成本高，并且时刻都有可能网站被攻击的风险还有一方面就是infinityfree的服务器在国外，国内的访问速度实在太慢了，电脑还好，手机在第一次使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="零成本建站之hexo前言">
+<meta property="og:url" content="http://example.com/2025/01/29/%E9%9B%B6%E6%88%90%E6%9C%AC%E5%BB%BA%E7%AB%99%E4%B9%8Bhexo%E5%89%8D%E8%A8%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="NO">
+<meta property="og:description" content="相信有的朋友看了我之前的文章中使用infinityfree+wordpress建立动态博客的文章对于有稳定国内服务器的同学来说这可能就是最优解，写文章，发博客都非常的方便但是对于零成本建站这个项目来说，动态博客似乎太奢侈了是因为动态博客它的资源消耗大，维护成本高，并且时刻都有可能网站被攻击的风险还有一方面就是infinityfree的服务器在国外，国内的访问速度实在太慢了，电脑还好，手机在第一次使">
 <meta property="og:locale">
+<meta property="article:published_time" content="2025-01-28T16:58:23.000Z">
+<meta property="article:modified_time" content="2025-02-15T12:45:08.212Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -436,15 +438,6 @@
 
 <div class="page-information-card-container">
 	
-		
-<div class="page-information-card card bg-gradient-secondary shadow-lg border-0">
-	<div class="card-body">
-		<h3 class="text-black">归档 : 2025/2 </h3>
-		
-	</div>
-</div>
-
-	
 </div>
 
 <div id="sidebar_mask"></div>
@@ -471,24 +464,45 @@
 		<div id="leftbar_part2" class="widget widget_search card bg-white shadow-sm border-0">
 			<div id="leftbar_part2_inner" class="card-body">
 				
-				<div class="nav-wrapper" style="padding-top: 5px; display:none; ">
+				<div class="nav-wrapper" style="padding-top: 5px;">
 	                <ul class="nav nav-pills nav-fill" role="tablist">
 						
+							<li class="nav-item sidebar-tab-switcher">
+								<a class="active show" id="leftbar_tab_catalog_btn" data-toggle="tab" href="#leftbar_tab_catalog" role="tab" aria-controls="leftbar_tab_catalog" no-pjax>文章目录</a>
+							</li>
+						
 						<li class="nav-item sidebar-tab-switcher">
-							<a class="active show" id="leftbar_tab_overview_btn" data-toggle="tab" href="#leftbar_tab_overview" role="tab" aria-controls="leftbar_tab_overview" no-pjax>站点概览</a>
+							<a class="" id="leftbar_tab_overview_btn" data-toggle="tab" href="#leftbar_tab_overview" role="tab" aria-controls="leftbar_tab_overview" no-pjax>站点概览</a>
 						</li>
 	                </ul>
 				</div>
 				<div>
 					<div class="tab-content" style="padding: 10px 10px 0 10px;">
 						
-						<div class="tab-pane fade text-center active show" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
+							<div class="tab-pane fade active show" id="leftbar_tab_catalog" role="tabpanel" aria-labelledby="leftbar_tab_catalog_btn">
+								<div id="leftbar_catalog"></div>
+								<script type="text/javascript">
+									$(function () {
+										$(document).headIndex({
+											articleWrapSelector: '#post_content',
+											indexBoxSelector: '#leftbar_catalog',
+											subItemBoxClass: "index-subItem-box",
+											itemClass: "index-item",
+											linkClass: "index-link",
+											offset: 80,
+										});
+									})
+								</script>
+								
+							</div>
+						
+						<div class="tab-pane fade text-center" id="leftbar_tab_overview" role="tabpanel" aria-labelledby="leftbar_tab_overview_btn">
 							<img id="leftbar_overview_author_image" src="/assets/img/auther.jpg" class="img-fluid rounded-circle shadow-sm" style="width: 100px;" alt="avatar">
 							<h6 id="leftbar_overview_author_name">Hexo</h6>
 							<nav class="site-state">
 								<div class="site-state-item site-state-posts">
 									<a href="/archives">
-										<span class="site-state-item-count">1</span>
+										<span class="site-state-item-count">3</span>
 										<span class="site-state-item-name">文章</span>
 									</a>
 								</div>
@@ -584,18 +598,17 @@
 	<main id="main" class="site-main" role="main">
 		
 		
-		
-				
-	<article class="post card bg-white shadow-sm border-0 ">
+			
+	<article class="post post-full card bg-white shadow-sm border-0 ">
 	<header class="post-header text-center">
 		
-		<a class="post-title" href="/2025/02/15/hello-world/">Hello World</a>
+		<a class="post-title" href="/2025/01/29/%E9%9B%B6%E6%88%90%E6%9C%AC%E5%BB%BA%E7%AB%99%E4%B9%8Bhexo%E5%89%8D%E8%A8%80/">零成本建站之hexo前言</a>
 		<div class="post-meta">
 			
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2025-2-15 20:48:58 | 编辑于 2025-2-15 20:48:58">2025-2-15 20:48
+							<time title="发布于 2025-1-29 0:58:23 | 编辑于 2025-2-15 20:45:08">2025-1-29 0:58
 							</time>
 						</div>
 					
@@ -603,7 +616,7 @@
 							<div class="post-meta-devide">|</div>
 						
 						<div class="post-meta-detail post-meta-detail-words">
-							<i class="fa fa-book" aria-hidden="true"></i>
+							<i class="fa fa fa-book" aria-hidden="true"></i>
 							<span id="busuanzi_container_page_pv">
 								阅读<span id="busuanzi_value_page_pv"></span>次
 							</span>
@@ -614,7 +627,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-words">
 							<i class="fa fa-file-word-o" aria-hidden="true"></i>
-							75 字
+							366 字
 						</div>
 					
 						
@@ -629,23 +642,133 @@
 		
 	</header>
 
-	<div class="post-content">
-		
-			
-				Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you ca...
-			
-		
+	<div class="post-content" id="post_content">
+		<h3 id="相信有的朋友看了我之前的文章中使用infinityfree-wordpress建立动态博客的文章"><a href="#相信有的朋友看了我之前的文章中使用infinityfree-wordpress建立动态博客的文章" class="headerlink" title="相信有的朋友看了我之前的文章中使用infinityfree+wordpress建立动态博客的文章"></a>相信有的朋友看了我之前的文章中使用<a target="_blank" rel="noopener" href="https://daiweb.us.kg/2025/01/27/hello-world/">infinityfree+wordpress建立动态博客</a>的文章</h3><h3 id="对于有稳定国内服务器的同学来说这可能就是最优解，写文章，发博客都非常的方便"><a href="#对于有稳定国内服务器的同学来说这可能就是最优解，写文章，发博客都非常的方便" class="headerlink" title="对于有稳定国内服务器的同学来说这可能就是最优解，写文章，发博客都非常的方便"></a>对于有稳定国内服务器的同学来说这可能就是最优解，写文章，发博客都非常的方便</h3><h3 id="但是对于零成本建站这个项目来说，动态博客似乎太奢侈了"><a href="#但是对于零成本建站这个项目来说，动态博客似乎太奢侈了" class="headerlink" title="但是对于零成本建站这个项目来说，动态博客似乎太奢侈了"></a><strong>但是对于零成本建站这个项目来说，动态博客似乎太奢侈了</strong></h3><p>是因为<strong>动态博客</strong>它的资源消耗大，维护成本高，并且<strong>时刻都有可能网站被攻击</strong>的风险<br>还有一方面就是infinityfree的服务器在<strong>国外</strong>，国内的访问速度实在<strong>太慢了</strong>，电脑还好，手机在第一次使用时甚至要加载2-3分钟之久，为访客提供了非常不好的体验<br>这也不是我想看到的，所以我决定采用<strong>静态网页</strong>来制作博客，这种方式网站的加载速度会更快，减少用户等待时间，提高用户满意度。而且静态博客不需要服务器动态处理请求，对服务器资源的占用极低。这意味着即使在较低配置的服务器上，也能<strong>高效运行</strong>，降低了硬件成本。静态博客的安全性也是很高的。</p>
+<h3 id="所以我准备将使用静态博客，主要是使用hexo-github-pages-vercel的方式零成本建造一个令人满意的博客网站"><a href="#所以我准备将使用静态博客，主要是使用hexo-github-pages-vercel的方式零成本建造一个令人满意的博客网站" class="headerlink" title="所以我准备将使用静态博客，主要是使用hexo+github pages+vercel的方式零成本建造一个令人满意的博客网站"></a><strong>所以我准备将使用静态博客，主要是使用hexo+github pages+vercel的方式零成本建造一个令人满意的博客网站</strong></h3><p><strong>具体内容等待我更下一篇文章吧！</strong></p>
+
 	</div>
+
+	
+
+	
 
 	
 </article>
 
+	<div id="share_container">
+	<div id="share" data-initialized="true">
+		<a class="no-pjax icon-wechat" tooltip="分享到微信">
+			<button class="btn btn-icon btn-success">
+				<span class="btn-inner--icon"><i class="fa fa-weixin"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-douban" tooltip="分享到豆瓣">
+			<button class="btn btn-icon btn-primary" style="background: #209261;border: none;">
+				豆
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-qq" tooltip="分享到 QQ">
+			<button class="btn btn-icon btn-primary" style="background: #2196f3;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-qq"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-qzone" tooltip="分享到 QQ 空间">
+			<button class="btn btn-icon btn-primary" style="background: #ffc107;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-star"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-weibo" tooltip="分享到微博">
+			<button class="btn btn-icon btn-warning">
+				<span class="btn-inner--icon"><i class="fa fa-weibo"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-facebook" tooltip="分享到 Facebook">
+			<button class="btn btn-icon btn-primary" style="background: #283593;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-facebook"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-twitter" tooltip="分享到 Twitter">
+			<button class="btn btn-icon btn-primary" style="background: #03a9f4;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-telegram" href="https://telegram.me/share/url?url=http://example.com/2025/01/29/%E9%9B%B6%E6%88%90%E6%9C%AC%E5%BB%BA%E7%AB%99%E4%B9%8Bhexo%E5%89%8D%E8%A8%80/&text=零成本建站之hexo前言" tooltip="分享到 Telegram">
+			<button class="btn btn-icon btn-primary" style="background: #42a5f5;border: none;">
+				<span class="btn-inner--icon"><i class="fa fa-telegram"></i></span>
+			</button>
+		</a>
+		<a target="_blank" class="no-pjax icon-copy-link" id="share_copy_link" tooltip="复制链接">
+			<button class="btn btn-icon btn-default">
+				<span class="btn-inner--icon"><i class="fa fa-link"></i></span>
+			</button>
+		</a>
+	</div>
+	<button id="share_show" class="btn btn-icon btn-primary" tooltip="分享">
+		<span class="btn-inner--icon"><i class="fa fa-share"></i></span>
+	</button>
+</div>
+<script type="text/javascript">
+	socialShare("#share", {
+	    title : '零成本建站之hexo前言',
+	    description : `相信有的朋友看了我之前的文章中使用infinityfree+wordpress建立动态博客的文章对于...`,
+	    wechatQrcodeTitle : "分享到微信",
+	    wechatQrcodeHelper : '微信扫描二维码',
+	    source : 'http://example.com/2025/01/29/%E9%9B%B6%E6%88%90%E6%9C%AC%E5%BB%BA%E7%AB%99%E4%B9%8Bhexo%E5%89%8D%E8%A8%80/'
+	});
+	$("#share_show")[0].onclick = function(){
+		$("#share_container").addClass("opened");
+	};
+	$("#share_copy_link")[0].onclick = function(){
+		let input = document.createElement('input');
+		document.body.appendChild(input);
+		input.setAttribute("value", window.location.href);
+		input.setAttribute("readonly", "readonly");
+		input.setAttribute("style", "opacity: 0;mouse-events:none;");
+		input.select();
+		if (document.execCommand('copy')){
+			iziToast.show({
+				title: '链接已复制',
+				message: "链接已复制到剪贴板",
+				class: 'shadow',
+				position: 'topRight',
+				backgroundColor: '#2dce89',
+				titleColor: '#ffffff',
+				messageColor: '#ffffff',
+				iconColor: '#ffffff',
+				progressBarColor: '#ffffff',
+				icon: 'fa fa-check',
+				timeout: 5000
+			});
+		}else{
+			iziToast.show({
+				title: '复制失败',
+				message: "请手动复制链接",
+				class: 'shadow',
+				position: 'topRight',
+				backgroundColor: '#f5365c',
+				titleColor: '#ffffff',
+				messageColor: '#ffffff',
+				iconColor: '#ffffff',
+				progressBarColor: '#ffffff',
+				icon: 'fa fa-close',
+				timeout: 5000
+			});
+		}
+		document.body.removeChild(input);
+	};
+</script>
 
 
 
 
 
-			
+<div class="post-navigation card shadow-sm"><div class="post-navigation-item post-navigation-pre"></div><div class="post-navigation-item post-navigation-next"><span class="page-navigation-extra-text">下一篇 <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></span><a href="/2025/01/28/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%89%8B%E8%A1%A8QQ%EF%BC%86%E4%BF%AE%E6%94%B9%E7%89%88/" rel="next"> 好用的手表QQ＆修改版</a></div></div>
+
+
+
+
+		
+		
 		
 		
 
